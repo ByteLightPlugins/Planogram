@@ -10,6 +10,8 @@ $(function() {
         BL.showContent(id)
       });
     })(content[i].id);
+    
+    imgDiv.on('load', function(){BL.previewReady()});
   }
   
   BL.previewReady();
